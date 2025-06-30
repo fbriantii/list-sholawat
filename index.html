@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>List Sholawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <button class="btn btn-light toggle-sidebar d-lg-none" id="toggleSidebarMobile">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand ms-3" href="#">Sholawat Collection Alhasan</a>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="search-container">
+            <div class="input-group">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search sholawat...">
+                <button class="btn btn-primary" type="button" id="searchButton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="sidebarLinks">
+            <a href="#" class="sidebar-link" data-title="Assalamu'alaik">Assalamu'alaik</a>
+            <a href="#" class="sidebar-link" data-title="Addinulana">Addinulana</a>
+            <a href="#" class="sidebar-link" data-title="Alhijrotu">Alhijrotu</a>
+            <a href="#" class="sidebar-link" data-title="Ahlan Wasahlan">Ahlan Wasahlan</a>
+            <a href="#" class="sidebar-link" data-title="Ahmad ya Habibi">Ahmad ya Habibi</a>
+            <a href="#" class="sidebar-link" data-title="Ajmala Dzikro">Ajmala Dzikro</a>
+            <a href="#" class="sidebar-link" data-title="Alamate Anak Sholeh">Alamate Anak Sholeh</a>
+            <a href="#" class="sidebar-link" data-title="Annabi Shollu'alaih">Annabi Shollu'alaih</a>
+            <a href="#" class="sidebar-link" data-title="Ashubhubada">Ashubhubada</a>
+            <a href="#" class="sidebar-link" data-title="Azka Taslimi">Azka Taslimi</a>
+            <a href="#" class="sidebar-link" data-title="Habibi ya Muhammad">Habibi ya Muhammad</a>
+            <a href="#" class="sidebar-link" data-title="Hadzal Quran">Hadzal Quran</a>
+            <a href="#" class="sidebar-link" data-title="Nasabe Kanjeng Nabi">Nasabe Kanjeng Nabi</a>
+            <a href="#" class="sidebar-link" data-title="Qomarun">Qomarun</a>
+            <a href="#" class="sidebar-link" data-title="Ruuhi Fidak">Ruuhi Fidak</a>
+            <a href="#" class="sidebar-link" data-title="Ya Asyiqal Mustofa">Ya Asyiqal Mustofa</a>
+            <a href="#" class="sidebar-link" data-title="Yaa Abal Hasanain">Yaa Abal Hasanain</a>
+            <a href="#" class="sidebar-link" data-title="Yammim Nahwal Madinah">Yammim Nahwal Madinah</a>
+            <a href="#" class="sidebar-link" data-title="Kunta Rohiman">Kunta Rohiman</a>
+        </div>
+    </div>
+    
+    
+    <!-- Main Content -->
+    <div class="main-content p-4" id="mainContent">
+        <div class="container-fluid">
+            <h2 class="mb-4">Sholawat Collection</h2>
+            
+            <div class="row g-4" id="sholawatContainer">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Assalamu'alaik">
+                        <div class="card-img-container">
+                            <img src="img/assalamu.jpeg" class="card-img-top" alt="Assalamu'alaik">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Assalamu'alaik</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Addinulana">
+                        <div class="card-img-container">
+                            <img src="img/addinu.jpg" class="card-img-top" alt="Addinulana">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Addinulana</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Alhijrotu">
+                        <div class="card-img-container">
+                            <img src="img/alhijrotu.jpg" class="card-img-top" alt="Alhijrotu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alhijrotu</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ahlan Wasahlan">
+                        <div class="card-img-container">
+                            <img src="img/ahlan.jpg" class="card-img-top" alt="Ahlan Wasahlan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ahlan Wasahlan</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ahmad ya Habibi">
+                        <div class="card-img-container">
+                            <img src="img/ahmad.png" class="card-img-top" alt="Ahmad ya Habibi">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ahmad ya Habibi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ajmala Dzikro">
+                        <div class="card-img-container">
+                            <img src="img/ajmala.jpg" class="card-img-top" alt="Ajmala Dzikro">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ajmala Dzikro</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Alamate Anak Sholeh">
+                        <div class="card-img-container">
+                            <img src="img/alamate.jpg" class="card-img-top" alt="Alamate Anak Sholeh">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alamate Anak Sholeh</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Annabi Shollu'alaih">
+                        <div class="card-img-container">
+                            <img src="img/annabi.png" class="card-img-top" alt="Annabi Shollu'alaih">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Annabi Shollu'alaih</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ashubhubada">
+                        <div class="card-img-container">
+                            <img src="img/ashubhu.jpg" class="card-img-top" alt="Ashubhubada">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ashubhubada</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Azka Taslimi">
+                        <div class="card-img-container">
+                            <img src="img/azka.jpg" class="card-img-top" alt="Azka Taslimi">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Azka Taslimi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Habibi ya Muhammad">
+                        <div class="card-img-container">
+                            <img src="img/Habibi-Yaa-Muhammad.JPG" class="card-img-top" alt="Habibi ya Muhammad">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Habibi ya Muhammad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Hadzal Quran">
+                        <div class="card-img-container">
+                            <img src="img/hadzal.jpg" class="card-img-top" alt="Hadzal Quran">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hadzal Quran</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Nasabe Kanjeng Nabi">
+                        <div class="card-img-container">
+                            <img src="img/nasabe.jpg" class="card-img-top" alt="Nasabe Kanjeng Nabi">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nasabe Kanjeng Nabi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Qomarun">
+                        <div class="card-img-container">
+                            <img src="img/qomarun.jpg" class="card-img-top" alt="Qomarun">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Qomarun</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ruuhi Fidak">
+                        <div class="card-img-container">
+                            <img src="img/ruuhifidak.jpg" class="card-img-top" alt="Ruuhi Fidak">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ruuhi Fidak</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Ya Asyiqal Mustofa">
+                        <div class="card-img-container">
+                            <img src="img/ya-asyiqol-mustofa-lirikislam.jpg" class="card-img-top" alt="Ya Asyiqal Mustofa">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ya Asyiqal Mustofa</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Yaa Abal Hasanain">
+                        <div class="card-img-container">
+                            <img src="img/yaabal.jpg" class="card-img-top" alt="Yaa Abal Hasanain">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yaa Abal Hasanain</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Yammim Nahwal Madinah">
+                        <div class="card-img-container">
+                            <img src="img/yammim.jpg" class="card-img-top" alt="Yammim Nahwal Madinah">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yammim Nahwal Madinah</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shadow-sm h-100" data-title="Kunta Rohiman">
+                        <div class="card-img-container">
+                            <img src="img/kunta.jpg" class="card-img-top" alt="Kunta Rohiman">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kunta Rohiman</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
